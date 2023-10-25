@@ -1,24 +1,27 @@
 import './App.css';
 import Header from './components/Header';
-import Nav from './components/Nav';
-import Main from './components/Main';
+import Main from './components/Main/Main';
 import Footer from './components/Footer';
 
 function App() {
   return (
     <>
       {/*
-      step-01:
-
+      version-01:
       <header></header>
       <nav></nav>
       <main></main>
       <footer></footer>
 
-      step-02:
-      */}
+      version-02:
       <Header/>
       <Nav/>
+      <Main/>
+      <Footer/>
+
+      version-03:
+      */}
+      <Header/>
       <Main/>
       <Footer/>
     </>

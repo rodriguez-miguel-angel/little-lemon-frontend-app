@@ -1,0 +1,232 @@
+/* navigation [Header]: Logo. Nav. */
+.Main {
+  width: 100vw;
+  height: 70vh;
+  grid-area: Main;
+  display: grid;
+
+
+  /* align-content: center; */
+  /* grid-template-areas: "logo nav nav" ; */
+  /* grid-template-columns: 15% 70% 15%; */
+  /* grid-template-columns: auto; */
+  grid-template-rows: 20% 30% 30% 20%;
+
+  grid-template-areas: "Hero" 
+                        "Highlights"
+                        "Testimonials"
+                        "About";
+
+  background-color: var(--color-01);
+  color: var(--color-02);
+}
+
+
+.Hero {
+  /* min-width: 100vw;
+  min-height: 20vh; */
+  max-height: 20vh;
+  grid-area: Hero;
+  display: grid;
+
+  grid: 20vh / 50% 50%;
+ 
+  background-color: var(--primary-color-01);
+  color: var(--color-01);
+}
+
+.Hero .hero-content {
+
+  display: grid;
+
+  grid-template-columns: 1fr;
+  /* grid-template-rows: repeat(3,minmax(0,1fr)); */
+  grid-template-rows: repeat(4, minmax(0, min-content));
+  text-align: left;
+  padding-left: 1em;
+}
+
+.Hero .hero-content > * {
+  grid-column: 1;
+  
+  display: flex;
+  flex-direction: row;
+
+  align-items: flex-start;
+  justify-content: space-between;
+
+}
+
+
+
+
+
+.Highlights {
+  max-height: 30vh;
+  grid-area: Highlights;
+  display: grid;
+
+  grid-template-rows: 1fr 2fr;
+  grid-template-columns: repeat(3,minmax(0,1fr));
+  grid-template-areas: "section-title . button"
+                       "HighlightCard HighlightCard HighlightCard";
+  column-gap: 2em;
+}
+
+.Highlights .section-title {
+  grid-row: 1;
+  grid-column: 1/4;
+}
+
+.Highlights button {
+  grid-row: 1;
+  grid-column: 3/4;
+
+  justify-self: right;
+}
+
+.HighlightCard {
+  grid-row: 2;
+
+  height: 80%;
+
+  background-color: var(--highlight-colors-01);
+  color: var(--color-02);
+}
+
+.Testimonials {
+    /*
+    min-width: 1440px;
+    min-height: 123px;
+     */
+    max-height: 30vh;
+    grid-area: Testimonials;
+    display: grid;
+
+
+    /* align-content: center; */
+
+    grid-template-rows: 1fr 2fr;
+    grid-template-columns: repeat(4,minmax(0,1fr));
+    grid-template-areas: ". section-title section-title ."
+                          "TestimonialCard TestimonialCard TestimonialCard TestimonialCard";
+
+
+    background-color: var(--highlight-colors-03);
+    color: var(--color-02);
+  
+    justify-items: center;
+}
+
+.Testimonials .section-title {
+  grid-column: 2/4;
+}
+
+.TestimonialCard {
+  grid-row: 2;
+
+  height: 80%;
+
+  background-color: var(--highlight-colors-01);
+  color: var(--color-02);
+}
+
+.About {
+  max-height: 20vh;
+  grid-area: About;
+  display: grid;
+  grid: 20vh / 50% 50%;
+
+  color: var(--color-02);
+}
+
+.About .about-content {
+
+  display: grid;
+  grid-template-rows: repeat(3, minmax(0, min-content));
+  grid-template-areas: "display-title"
+                       "subtitle"
+                       "paragraph-text";
+
+  row-gap: none;
+  padding-left: 1em;
+}
+
+.About .about-content > * {
+  display: flex;
+  flex-direction: row;
+
+  color: var(--color-02);
+
+  align-items: flex-start;
+  justify-content: space-between;
+
+}
+
+.Hero .hero-imgage {
+  grid-column: 2;
+  display: grid;
+  grid-template-columns: repeat(5, minmax(10%, auto));
+  justify-items: center;  
+}
+
+.Hero .hero-imgage .restuarant {
+  grid-column: 3;
+}
+
+.About .about-images {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(10%, auto));
+  justify-items: center;
+}
+
+.About .about-images .chefA {
+  grid-column: 3/4;
+  grid-row: 1;
+}
+
+.About .about-images .chefB {
+  grid-column: 3/4;
+  grid-row: 1;
+}
+
+/* 
+ ==============================================================================
+                            Litte Lemon [[Images]]
+  ==============================================================================
+*/
+
+
+/* See <https://new.express.adobe.com/tools/convert-to-svg> */
+
+
+.restuarant {
+  /* display: flex;
+  flex-direction: column; */
+  /* display: block; */
+  /* width: 2vw; */
+  /* width: 50%;
+  height: 50%; */
+  /* background-color: var(--color-01); */
+  /* padding: 0 8em 0 8em; */
+  align-items: center;
+  justify-items: center;
+}
+
+
+.chefA {
+  margin: 0 0 0 0;
+  padding: 0 1em 0 0;
+  align-items: center;
+  justify-items: center;
+}
+
+.chefB {
+  margin: 0 0 0 0;
+  padding: 1em;
+
+  z-index: 1;
+  
+  align-items: center;
+  justify-items: center;
+}
