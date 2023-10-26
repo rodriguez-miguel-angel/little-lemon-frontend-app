@@ -1,0 +1,17 @@
+.MenuPage {
+    width: 100vw;
+    height: 70vh;
+    grid-area: MenuPage;
+    display: grid;
+  
+  
+    /* align-content: center; */
+    /* grid-template-areas: "logo nav nav" ; */
+    /* grid-template-columns: 15% 70% 15%; */
+    /* grid-template-columns: auto; */
+    grid-template-rows: 20% 30% 30% 20%;
+  
+     
+    background-color: var(--color-01);
+    color: var(--color-02);
+}
