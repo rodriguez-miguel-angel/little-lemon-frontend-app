@@ -4,14 +4,12 @@
     grid-area: Login;
     display: grid;
   
-  
-    /* align-content: center; */
-    /* grid-template-areas: "logo nav nav" ; */
-    /* grid-template-columns: 15% 70% 15%; */
-    /* grid-template-columns: auto; */
-    grid-template-rows: 20% 30% 30% 20%;
-  
-     
-    background-color: var(--color-01);
-    color: var(--color-02);
+    background-color: var(--primary-color-01);
+    color: var(--color-01);
+}
+
+
+.login-form {
+    color: var(--chakra-colors-gray-700);
+    background-color: var(--chakra-colors-gray-50);
 }

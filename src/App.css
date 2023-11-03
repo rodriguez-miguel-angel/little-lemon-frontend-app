@@ -123,6 +123,8 @@ body {
   min-width: 1440px; 
   min-height: 417px;
   */
+
+  /* width: 85vw [desktop]. 100vw[mobile]; */
   width: 100vw;
   height: 20vh;
   grid-area: Footer;
@@ -177,7 +179,7 @@ body {
   /* font-family: Karla; */
   /* 8px [0.5em]. 12px[0.75em] */
   background-color: var(--primary-color-02);
-  color: #0000;
+  color: var(--color-02);
   width: -moz-fit-content;
   width: fit-content;
   margin: 1em 0 1em 0;

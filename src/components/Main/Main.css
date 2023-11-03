@@ -1,5 +1,6 @@
 /* navigation [Header]: Logo. Nav. */
 .Main {
+  /* width: 85vw [desktop]. 100vw[mobile]; */
   width: 100vw;
   height: 70vh;
   grid-area: Main;

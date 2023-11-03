@@ -9,7 +9,10 @@ import BookingPage from './components/BookingPage/BookingPage';
 import Order from './components/Order/Order';
 import Login from './components/Login/Login';
 
+import useScript from './hooks/useScript';
+
 function App() {
+  useScript();
   return (
     <>
       {/*
